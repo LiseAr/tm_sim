@@ -76,7 +76,10 @@ def put_head(word, head, delim):
     opn_head = delim[0]
     cls_head = delim[1]
 
-    if head == 0:
+    if len(word) == 0:
+        word = ' '
+        ret = opn_head + word + cls_head
+    elif head == 0:
         ret = opn_head + word[0] + cls_head + word[1:]
     else:
         if head == len(word):

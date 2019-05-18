@@ -2,6 +2,7 @@
 bloco main 01
     01 a -- A i 10
     01 b -- B i 20
+    01 * -- * i rejeite
     10 moveFim 11
     20 moveFim 21
 
